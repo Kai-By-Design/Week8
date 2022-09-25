@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2022 Catalogue - Ocean Kayaks</title>
-  <link rel="stylesheet" href="kayak.css">
+  <link rel="stylesheet" href="kayak-flex.css">
 </head>
   <style>
     table, th, td {
@@ -22,22 +22,87 @@
   }
 
   </style>
-<body>
-  <header>
-    <h1 align="center">Kai's Kayaks</h1>
-    <h3 align="center">The World's Smallest Kayak Store <br><br></h3>
+<body class="body">
+  <header class="header">
+    <h1>Kai's Kayaks</h1>
+    <h3>The World's Smallest Kayak Store</h3>
+    <p>
 
-    <div align="center">
-      <h4>
-        <a href="kayak-pg2.html">The 2022 Lake Series </a><span>&emsp;&emsp;&emsp;</span>
-        <a href="kayak-pg3.html">The 2022 Ocean Series</a><span>&emsp;&emsp;&emsp;</span>
+      <span>
+
+        <a href="kayak.html"><h4>The 2022 Catologue Home</h4></a>
+        <h4><a href="kayak-pg2.html">The 2022 Lake Series </a></h4>
+      </span>
+      <span>
+
+      </span>
+      <h4><a href="kayak-pg3.html">The 2022 Ocean Series</a></h4>
+      <h4><a href="kayak-pg4.html">The 2022 River Series</a></h4>
+    </p>
+
+      <!-- <h4>
+        <a href="kayak.html">The 2022 Catologue Home</a><span>&emsp;&emsp;</span>
+        <a href="kayak-pg2.html">The 2022 Lake Series </a><span>&emsp;&emsp;</span>
+        <a href="kayak-pg3.html">The 2022 Ocean Series</a><span>&emsp;&emsp;</span>
         <a href="kayak-pg4.html">The 2022 River Series</a>
-      </h4>
-    </div>
+      </h4> -->
 
-    <hr align="center" width="80%"><br>
+    <hr width="80%"><br>
   </header>
-  <div >
+  <section class="section">
+    <!-- Product 1 - Flexbox Test -->
+    <div class="product">
+      <img id="tile" src="https://www.rei.com/media/810ff452-3b4c-4d9f-a0c6-b69a6a2bfe2b?size=784x588" alt="pic of Lake Kayak - Stable in water"/>
+
+      <h3> Bote Lono Aero Sit-On-Top Inflatable Kayak </h3>
+      <p id="product-text">Bote Lono Aero Sit-On-Top Inflatable Kayak Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint provident voluptate dolor qui repellat labore explicabo eum? Nisi, consectetur, dolor ut obcaecati facere asperiores necessitatibus omnis officia tenetur iste vel quidem autem, possimus debitis earum! Minus ab amet inventore similique aperiam cupiditate assumenda vero veritatis in eos repellat recusandae reiciendis molestiae exercitationem, excepturi, illum molestias suscipit itaque harum temporibus dicta.</p>
+      <form>
+        <input type="checkbox" name="unit_O_1-buy" step="1"> Add to Cart
+        <input type="checkbox" name="unit_O_1-wish" value="wish"> Add to Wish List
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <!-- Product 2 - Flexbox Test -->
+    <div class="product">
+      <img id="tile" src="https://www.rei.com/media/810ff452-3b4c-4d9f-a0c6-b69a6a2bfe2b?size=784x588" alt="pic of Lake Kayak - Stable in water"/>
+
+      <h3> Bote Lono Aero Sit-On-Top Inflatable Kayak </h3>
+      <p id="product-text">Bote Lono Aero Sit-On-Top Inflatable Kayak Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint provident voluptate dolor qui repellat labore explicabo eum? Nisi, consectetur, dolor ut obcaecati facere asperiores necessitatibus omnis officia tenetur iste vel quidem autem, possimus debitis earum! Minus ab amet inventore similique aperiam cupiditate assumenda vero veritatis in eos repellat recusandae reiciendis molestiae exercitationem, excepturi, illum molestias suscipit itaque harum temporibus dicta.</p>
+      <form>
+        <input type="checkbox" name="unit_O_1-buy" step="1"> Add to Cart
+        <input type="checkbox" name="unit_O_1-wish" value="wish"> Add to Wish List
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <div class="product">
+      <img id="tile" src="https://www.rei.com/media/810ff452-3b4c-4d9f-a0c6-b69a6a2bfe2b?size=784x588" alt="pic of Lake Kayak - Stable in water"/>
+
+      <h3> Bote Lono Aero Sit-On-Top Inflatable Kayak </h3>
+      <p id="product-text">Bote Lono Aero Sit-On-Top Inflatable Kayak Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint provident voluptate dolor qui repellat labore explicabo eum? Nisi, consectetur, dolor ut obcaecati facere asperiores necessitatibus omnis officia tenetur iste vel quidem autem, possimus debitis earum! Minus ab amet inventore similique aperiam cupiditate assumenda vero veritatis in eos repellat recusandae reiciendis molestiae exercitationem, excepturi, illum molestias suscipit itaque harum temporibus dicta.</p>
+      <form>
+        <input type="checkbox" name="unit_O_1-buy" step="1"> Add to Cart
+        <input type="checkbox" name="unit_O_1-wish" value="wish"> Add to Wish List
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </section>
+  <div>
+    <th width="65%"><a href="kayak.html">The 2022 Catologue Home</a></th>
+    <th width="35%">Lake Kayaks Product Descriptions</th>
+  </div>
+  <div id="product" class="flex-container">
+    <img
+          width="100%";
+          src="https://www.rei.com/media/810ff452-3b4c-4d9f-a0c6-b69a6a2bfe2b?size=784x588" alt="pic of Lake Kayak - Stable in water"/>
+    <h3> Bote Lono Aero Sit-On-Top Inflatable Kayak </h3>
+    <p>Bote Lono Aero Sit-On-Top Inflatable Kayak Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint provident voluptate dolor qui repellat labore explicabo eum? Nisi, consectetur, dolor ut obcaecati facere asperiores necessitatibus omnis officia tenetur iste vel quidem autem, possimus debitis earum! Minus ab amet inventore similique aperiam cupiditate assumenda vero veritatis in eos repellat recusandae reiciendis molestiae exercitationem, excepturi, illum molestias suscipit itaque harum temporibus dicta.</p>
+    <form>
+      <input type="checkbox" name="unit_O_1-buy" step="1"> Add to Cart
+      <input type="checkbox" name="unit_O_1-wish" value="wish"> Add to Wish List
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <div id="product">
     <table>
       <tr>
         <th width="65%"><a href="kayak.html">The 2022 Catologue Home</a></th>
@@ -49,28 +114,19 @@
         <td><hr></td>
       </tr>
 
-      <tr>
-        <td align="top">
+      <tr class="flex-container">
+        <td>
             <img
           width="100%";
           src="https://www.rei.com/media/810ff452-3b4c-4d9f-a0c6-b69a6a2bfe2b?size=784x588" alt="pic of Lake Kayak - Stable in water"/>
         </td>
-        <td align="center"><h3> Bote Lono Aero Sit-On-Top Inflatable Kayak </h3><br>Bote Lono Aero Sit-On-Top Inflatable Kayak Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint provident voluptate dolor qui repellat labore explicabo eum? Nisi, consectetur, dolor ut obcaecati facere asperiores necessitatibus omnis officia tenetur iste vel quidem autem, possimus debitis earum! Minus ab amet inventore similique aperiam cupiditate assumenda vero veritatis in eos repellat recusandae reiciendis molestiae exercitationem, excepturi, illum molestias suscipit itaque harum temporibus dicta.
+
+        <td><h3> Bote Lono Aero Sit-On-Top Inflatable Kayak </h3><br>Bote Lono Aero Sit-On-Top Inflatable Kayak Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint provident voluptate dolor qui repellat labore explicabo eum? Nisi, consectetur, dolor ut obcaecati facere asperiores necessitatibus omnis officia tenetur iste vel quidem autem, possimus debitis earum! Minus ab amet inventore similique aperiam cupiditate assumenda vero veritatis in eos repellat recusandae reiciendis molestiae exercitationem, excepturi, illum molestias suscipit itaque harum temporibus dicta.
           <form>
             <br>
-            <span align="center">
-              <table>
-                <td width="42%">
-                  <input type="checkbox" name="unit_O_1-buy" step="1"> Add to Cart
-                </td>
-                <td width="58%">
-                  <input type="checkbox" name="unit_O_1-wish" value="wish"> Add to Wish List
-                </td >
-                <td>
-                  <input type="submit" value="Submit"><br>
-                </td>
-              </table>
-            </span>
+            <input type="checkbox" name="unit_O_1-buy" step="1"> Add to Cart
+            <input type="checkbox" name="unit_O_1-wish" value="wish"> Add to Wish List
+            <input type="submit" value="Submit">
           </form>
         </td>
       </tr>
@@ -80,23 +136,23 @@
       </tr>
       <tr>
         <td></td>
-        <td><hr  align="center" width="50%"></td>
+        <td><hr class="textHeading"></td>
       </tr>
       <tr>
         <td><br></td>
       </tr>
 
-      <tr border="20px">
+      <tr class="flex-container">
         <td align="top">
             <br><img
           width="100%";
           src="https://www.rei.com/media/0fbd8c87-0cb1-4331-991f-89a4a129be96?size=784x588" alt="pic of Lake Kayak - Portable to water"/>
         </td>
-        <td align="center"><h3> Oru Kayak Coast XT Folding Kayak </h3><br>Oru Kayak Coast XT Folding Kayak Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint provident voluptate dolor qui repellat labore explicabo eum? Nisi, consectetur, dolor ut obcaecati facere asperiores necessitatibus omnis officia tenetur iste vel quidem autem, possimus debitis earum! Minus ab amet inventore similique aperiam cupiditate assumenda vero veritatis in eos repellat recusandae reiciendis molestiae exercitationem, excepturi, illum molestias suscipit itaque harum temporibus dicta.
+        <td><h3> Oru Kayak Coast XT Folding Kayak </h3><br>Oru Kayak Coast XT Folding Kayak Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint provident voluptate dolor qui repellat labore explicabo eum? Nisi, consectetur, dolor ut obcaecati facere asperiores necessitatibus omnis officia tenetur iste vel quidem autem, possimus debitis earum! Minus ab amet inventore similique aperiam cupiditate assumenda vero veritatis in eos repellat recusandae reiciendis molestiae exercitationem, excepturi, illum molestias suscipit itaque harum temporibus dicta.
 
           <form>
             <br>
-            <span align="center">
+            <span>
               <table>
                 <td width="42%">
                   <input type="checkbox" name="unit_O_2-buy" step="1"> Add to Cart

@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2022 Catalogue - Lake Kayaks</title>
-  <link rel="stylesheet" href="kayak.css">
+  <link rel="stylesheet" href="kayak-flex.css">
 </head>
   <style>
     table, th, td {
@@ -124,7 +124,7 @@
         <td><br></td>
       </tr>
 
-      <tr>
+      <tr class="flex-container">
         <td align="top">
             <br><img
           width="100%";
@@ -136,7 +136,7 @@
             <span align="center">
               <table>
                 <td width="42%">
-                  <input type="checkbox" name="unit_L_3-buy" step="1"> Add to Cart
+                  <input id="kayak-buy" type="number" name="unit_L_3-buy" step="1" min="0" max="20"> Add to Cart
                 </td>
                 <td width="58%">
                   <input type="checkbox" name="unit_L_3-wish" value="wish"> Add to Wish List
@@ -147,12 +147,28 @@
               </table>
             </span>
           </form>
-
         </td>
 
 
       </tr>
     </table>
+  </div>
+  <div class="flex-container">
+    <div id="twoid" class="flex-item">Two</div>
+    <div class="flex-item">
+      <input id="kayak-buy" type="number" name="unit_L_3-buy" step="1" min="0" max="20"> Add to Cart
+    </div>
+
+    <div class="flex-item">Four</div>
+    <div class="flex-item">
+      <form>
+              <input id="kayak-buy" type="number" name="unit_L_3-buy" step="1" min="0" max="20"> Add to Cart
+              <input type="checkbox" name="unit_L_3-wish" value="wish"> Add to Wish List
+              <input type="submit" value="Submit"><br>
+      </form>
+      </div>
+    <div class="flex-item">Six Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, dolores ducimus animi dolore dolorum eaque cupiditate! Vitae, culpa? Omnis, eveniet.</div>
+    <div class="flex-item">Three - The Wayfinder X3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint provident voluptate dolor qui repellat labore explicabo eum? Nisi, consectetur, dolor ut obcaecati facere asperiores necessitatibus omnis officia tenetur iste vel quidem autem, possimus debitis earum! Minus ab amet inventore similique aperiam cupiditate assumenda vero veritatis in eos repellat recusandae reiciendis molestiae exercitationem, excepturi, illum molestias suscipit itaque harum temporibus dicta.</div>
   </div>
 
 </body>
